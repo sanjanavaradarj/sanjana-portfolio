@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sanjana - Software Engineer & Computer Science (Data Science) Student specializing in Java, Python, and scalable backend systems.">
+  <meta name="keywords" content="Sanjana, Software Engineer, Data Science, Java Developer, Python, Portfolio, Backend Engineer">
+  <meta name="author" content="Sanjana">
+  
+  <title>Sanjana | Software Engineer & Data Science Student</title>
+
+  <!-- Google Fonts for Modern Typography & Pixel Art Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Pixelify+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons or Font Awesome via CDN for sleek UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE TOPBAR (Visible on small screens <= 992px)         -->
+  <!-- ========================================================= -->
+  <header class="mobile-topbar" id="mobile-topbar">
+    <a href="#hero" class="mobile-brand-logo" aria-label="Sanjana Portfolio Home">
+      <span class="logo-code">&lt;</span>Sanjana<span class="logo-accent">.dev</span><span class="logo-code">/&gt;</span>
+    </a>
+    
+    <div class="mobile-header-actions">
+      <!-- Quick Theme Toggle for Mobile -->
+      <button id="mobile-theme-toggle" class="pixel-theme-btn-sm" type="button" aria-label="Toggle Night Mode" title="Toggle theme">
+        <span class="theme-icon icon-sun" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+        <span class="theme-icon icon-moon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+      </button>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button id="sidebar-toggle-btn" class="pixel-btn pixel-btn-sm mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="vertical-navbar">
+        <i class="fa-solid fa-bars"></i> <span>MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop Overlay -->
+  <div class="pixel-nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- VERTICAL NAVIGATION BAR (Left Side of the Screen)         -->
+  <!-- Semantic, accessible & pixel art styled navigation        -->
+  <!-- Links: Home, About Me, Skills, Timeline, Projects,        -->
+  <!--        Testimonials, Chat, Contact                        -->
+  <!-- ========================================================= -->
+  <aside class="pixel-vertical-sidebar" id="vertical-navbar" aria-label="Main Navigation">
+    <div class="sidebar-inner">
+      
+      <!-- Sidebar Header / Player Identity -->
+      <div class="sidebar-header">
+        <div class="sidebar-avatar-wrapper">
+          <div class="sidebar-avatar-frame">
+            <img src="profile pic.jpeg" alt="Sanjana profile avatar" class="sidebar-avatar-img">
+            <span class="sidebar-status-dot" title="Player 1 Online" aria-hidden="true"></span>
+          </div>
+          <div class="sidebar-player-info">
+            <a href="#hero" class="sidebar-brand">SANJANA<span class="accent-dot">.DEV</span></a>
+            <span class="sidebar-player-role">SOFTWARE ENGINEER</span>
+            <span class="sidebar-player-lvl">LVL.2026 • DATA SCIENCE</span>
+          </div>
+        </div>
+
+        <!-- Close button for mobile drawer -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" type="button" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-nav" aria-label="Vertical Navigation Links">
+        <div class="nav-category-title">★ MAIN MENU ★</div>
+        <ul class="sidebar-nav-list" role="menubar">
+          
+          <li class="sidebar-nav-item" role="none">
+            <a href="#hero" class="sidebar-nav-link active" role="menuitem" data-nav="hero">
+              <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+              <span class="nav-text">Home</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#about" class="sidebar-nav-link" role="menuitem" data-nav="about">
+              <span class="nav-icon"><i class="fa-solid fa-user-ninja"></i></span>
+              <span class="nav-text">About Me</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#skills" class="sidebar-nav-link" role="menuitem" data-nav="skills">
+              <span class="nav-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+              <span class="nav-text">Skills</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#timeline" class="sidebar-nav-link" role="menuitem" data-nav="timeline">
+              <span class="nav-icon"><i class="fa-solid fa-hourglass-half"></i></span>
+              <span class="nav-text">Timeline</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#projects" class="sidebar-nav-link" role="menuitem" data-nav="projects">
+              <span class="nav-icon"><i class="fa-solid fa-gamepad"></i></span>
+              <span class="nav-text">Projects</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#testimonials" class="sidebar-nav-link" role="menuitem" data-nav="testimonials">
+              <span class="nav-icon"><i class="fa-solid fa-comments"></i></span>
+              <span class="nav-text">Testimonials</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#chat" class="sidebar-nav-link" role="menuitem" data-nav="chat">
+              <span class="nav-icon"><i class="fa-solid fa-comment-dots"></i></span>
+              <span class="nav-text">Chat</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+          <li class="sidebar-nav-item" role="none">
+            <a href="#contact" class="sidebar-nav-link" role="menuitem" data-nav="contact">
+              <span class="nav-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="nav-text">Contact</span>
+              <span class="nav-arrow" aria-hidden="true">►</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer Controls: Theme Toggle & Quick Actions -->
+      <div class="sidebar-footer">
+        
+        <!-- Night Mode Toggle in Vertical Navbar -->
+        <div class="sidebar-theme-wrapper">
+          <span class="sidebar-theme-label">THEME:</span>
+          <button id="sidebar-theme-toggle" class="pixel-btn pixel-btn-sm sidebar-theme-btn" type="button" aria-label="Toggle Night Mode" title="Toggle Dark/Light Mode">
+            <span class="sidebar-theme-icon"><i class="fa-solid fa-moon"></i></span>
+            <span class="sidebar-theme-text" id="sidebar-mode-label">NIGHT</span>
+          </button>
+        </div>
+
+        <a href="resume.pdf" class="pixel-btn pixel-btn-sm pixel-btn-secondary sidebar-resume-btn" target="_blank" download="Sanjana_Resume.pdf">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>RESUME.PDF</span>
+        </a>
+
+        <!-- Quick Social Badges -->
+        <div class="sidebar-socials">
+          <a href="https://github.com/sanjanavaradarj" class="sidebar-social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/sanjana-v" class="sidebar-social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:sanjanavaradarj@gmail.com" class="sidebar-social-link" aria-label="Email Sanjana" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+919901611394" class="sidebar-social-link" aria-label="Call Sanjana" title="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+        <div class="sidebar-version">SYSTEM: ONLINE • 2026</div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT AREA                                         -->
+  <!-- Semantic main wrapper containing all core sections         -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- HERO SECTION (Pixel Art Style with Background Image)    -->
+    <!-- Welcomes visitors with title, tagline, pixel HUD & night mode toggle -->
+    <!-- ======================================================= -->
+    <section class="section hero-section pixel-hero-section" id="hero">
+      <div class="pixel-scanline-overlay" aria-hidden="true"></div>
+      <div class="pixel-grid-pattern" aria-hidden="true"></div>
+      
+      <div class="container hero-container pixel-hero-container">
+        
+        <!-- Left Column: Pixel HUD & Welcome Dialog -->
+        <div class="hero-content pixel-hero-content">
+          
+          <!-- Pixel Top Bar with System Status & Night Mode Toggle Placeholder -->
+          <div class="pixel-hud-topbar">
+            <div class="pixel-status-badge">
+              <span class="pixel-blinking-dot" aria-hidden="true"></span>
+              <span class="pixel-badge-text">STATUS: PLAYER 1 ONLINE</span>
+            </div>
+
+            <!-- =================================================== -->
+            <!-- HERO NIGHT MODE TOGGLE PLACEHOLDER                  -->
+            <!-- Detects user default browser theme via CSS queries  -->
+            <!-- =================================================== -->
+            <div class="pixel-theme-toggle-wrapper" id="pixel-theme-toggle-box">
+              <span class="pixel-theme-caption">THEME:</span>
+              <button id="pixel-hero-theme-toggle" class="pixel-btn pixel-theme-toggle-btn" type="button" aria-label="Toggle Night Mode" title="Toggle Theme (Auto-detects browser default)">
+                <span class="pixel-mode-icon" aria-hidden="true"><i class="fa-solid fa-moon"></i></span>
+                <span class="pixel-mode-label" id="pixel-mode-label">NIGHT MODE</span>
+              </button>
+            </div>
+            <!-- END HERO NIGHT MODE TOGGLE PLACEHOLDER -->
+          </div>
+
+          <!-- Pixel Art Welcome Dialog Box -->
+          <div class="pixel-dialog-box">
+            <div class="pixel-dialog-header">
+              <span class="pixel-header-title">★ QUEST LOG: SANJANA.DEV ★</span>
+              <div class="pixel-window-controls" aria-hidden="true">
+                <span class="pixel-control-square"></span>
+                <span class="pixel-control-square"></span>
+                <span class="pixel-control-square"></span>
+              </div>
+            </div>
+
+            <!-- Welcome Title (Clear greeting for visitors) -->
+            <h1 class="pixel-hero-title">
+              <span class="pixel-prefix">&gt; </span>WELCOME, VISITOR!<br>
+              <span class="pixel-name-highlight">I'M SANJANA</span>
+            </h1>
+
+            <!-- Brief Tagline welcoming visitors -->
+            <p class="pixel-hero-tagline">
+              Software Engineer &amp; Data Science Student crafting robust backend systems, 
+              digital financial workflows, and embedded safety tech in Java &amp; Python.
+            </p>
+
+            <!-- Pixel RPG Character Stats HUD -->
+            <div class="pixel-stats-hud">
+              <div class="pixel-stat-row">
+                <span class="stat-name">CLASS:</span>
+                <span class="stat-value">Software Engineer</span>
+              </div>
+              <div class="pixel-stat-row">
+                <span class="stat-name">SPECIALTY:</span>
+                <span class="stat-value">Java / Python / Backend</span>
+              </div>
+              <div class="pixel-stat-row">
+                <span class="stat-name">EDUCATION:</span>
+                <span class="stat-value">B.E. CSE (Data Science) '26</span>
+              </div>
+              <div class="pixel-stat-bars">
+                <div class="pixel-bar-group">
+                  <span class="pixel-bar-label">HP [JAVA BACKEND]</span>
+                  <div class="pixel-bar-track">
+                    <div class="pixel-bar-fill hp-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+                <div class="pixel-bar-group">
+                  <span class="pixel-bar-label">MP [PYTHON &amp; DSA]</span>
+                  <div class="pixel-bar-track">
+                    <div class="pixel-bar-fill mp-fill" style="width: 82%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pixel Action Buttons -->
+            <div class="pixel-cta-group">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                <i class="fa-solid fa-gamepad"></i> <span>VIEW PROJECTS</span>
+              </a>
+              <a href="resume.pdf" class="pixel-btn pixel-btn-secondary" target="_blank" download="Sanjana_Resume.pdf">
+                <i class="fa-solid fa-file-arrow-down"></i> <span>GET RESUME</span>
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-accent">
+                <i class="fa-solid fa-envelope"></i> <span>CONTACT ME</span>
+              </a>
+            </div>
+
+            <!-- Pixel Social Links Row -->
+            <div class="pixel-socials-row">
+              <span class="pixel-socials-label">CONNECT:</span>
+              <div class="pixel-social-badges">
+                <a href="https://github.com/sanjanavaradarj" class="pixel-social-badge" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i> GITHUB
+                </a>
+                <a href="https://linkedin.com/in/sanjana-v" class="pixel-social-badge" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i> LINKEDIN
+                </a>
+                <a href="mailto:sanjanavaradarj@gmail.com" class="pixel-social-badge" aria-label="Email">
+                  <i class="fa-solid fa-envelope"></i> EMAIL
+                </a>
+                <a href="tel:+919901611394" class="pixel-social-badge" aria-label="Phone">
+                  <i class="fa-solid fa-phone"></i> CALL
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Pixel Avatar Card & Status HUD -->
+        <div class="hero-visual pixel-hero-visual">
+          <div class="pixel-avatar-card">
+            
+            <div class="pixel-avatar-header">
+              <span class="pixel-avatar-title"><i class="fa-solid fa-user-astronaut"></i> HERO_AVATAR</span>
+              <span class="pixel-avatar-level">LVL.2026</span>
+            </div>
+
+            <div class="pixel-avatar-frame">
+              <img src="profile pic.jpeg" alt="Sanjana - Software Engineer" class="pixel-profile-img">
+              <div class="pixel-scanline-inner" aria-hidden="true"></div>
+            </div>
+
+            <!-- Pixel Speech Bubble -->
+            <div class="pixel-speech-bubble">
+              <p>"Ready to engineer scalable software solutions!"</p>
+              <div class="pixel-bubble-arrow" aria-hidden="true"></div>
+            </div>
+
+            <!-- Pixel Badges -->
+            <div class="pixel-badges-container">
+              <span class="pixel-badge badge-java"><i class="fa-brands fa-java text-java"></i> JAVA CORE</span>
+              <span class="pixel-badge badge-python"><i class="fa-brands fa-python text-python"></i> PYTHON</span>
+              <span class="pixel-badge badge-cs"><i class="fa-solid fa-microchip"></i> DATA SCIENCE</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END HERO SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- ======================================================= -->
+    <!-- ABOUT ME SECTION (Clean, Minimalistic Pixel Art Style) -->
+    <!-- Profile avatar, short bio, career highlights & interests -->
+    <!-- ======================================================= -->
+    <section class="section about-section pixel-about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Get To Know Me</p>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            A software engineer crafting structured backend solutions with a foundation in Computer Science and Data Science.
+          </p>
+        </div>
+
+        <div class="about-minimal-wrapper">
+          
+          <!-- Left Column: Pixel Art Profile Avatar & Quick Stats -->
+          <div class="about-avatar-column">
+            <div class="about-pixel-card">
+              
+              <div class="about-card-titlebar">
+                <span class="about-card-tag"><i class="fa-solid fa-code"></i> PLAYER: SANJANA</span>
+                <span class="about-card-status">ONLINE</span>
+              </div>
+
+              <!-- Pixel Art Avatar Frame with Image Switching option -->
+              <div class="about-avatar-frame-box">
+                <img id="about-display-img" src="pixel_avatar.png" alt="Sanjana - Pixel Software Engineer Avatar" class="about-avatar-img">
+                <div class="about-avatar-scanline" aria-hidden="true"></div>
+              </div>
+
+              <!-- Switch between Pixel Avatar and Real Photo -->
+              <div class="avatar-toggle-bar">
+                <button id="toggle-avatar-style-btn" class="pixel-btn pixel-btn-sm avatar-switch-btn" type="button" aria-label="Toggle between Pixel Art Avatar and Photo">
+                  <i class="fa-solid fa-arrows-rotate"></i> <span id="avatar-toggle-text">VIEW PHOTO</span>
+                </button>
+              </div>
+
+              <!-- Minimal Info Grid -->
+              <div class="about-mini-meta">
+                <div class="mini-meta-item">
+                  <span class="meta-label">DEGREE</span>
+                  <span class="meta-val">B.E. CSE (Data Science) '26</span>
+                </div>
+                <div class="mini-meta-item">
+                  <span class="meta-label">FOCUS</span>
+                  <span class="meta-val">Java Backend &amp; Python</span>
+                </div>
+                <div class="mini-meta-item">
+                  <span class="meta-label">LOCATION</span>
+                  <span class="meta-val">Karnataka, India</span>
+                </div>
+                <div class="mini-meta-item">
+                  <span class="meta-label">STATUS</span>
+                  <span class="meta-val highlight-green">Available for Hire</span>
+                </div>
+              </div>
+
+              <!-- Compact Video Player Toggle -->
+              <div class="about-video-compact">
+                <details class="pixel-video-details">
+                  <summary class="pixel-video-summary">
+                    <span><i class="fa-solid fa-circle-play"></i> Watch 60s Intro Video</span>
+                    <span class="summary-arrow">▼</span>
+                  </summary>
+                  <div class="compact-video-box">
+                    <video controls class="portfolio-video" poster="pixel_avatar.png" preload="metadata">
+                      <source src="intorduction.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </details>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right Column: Short Bio, Career Highlights & Personal Interests -->
+          <div class="about-bio-column">
+            
+            <!-- Clean Short Bio Box -->
+            <div class="pixel-bio-box">
+              <h3 class="bio-heading">
+                Engineering elegant systems with logic, precision, and curiosity.
+              </h3>
+
+              <p class="bio-text">
+                I am a passionate <strong>Software Engineer</strong> currently in my pre-final year of 
+                <strong>Computer Science &amp; Engineering (Data Science)</strong> at Adhichunchanagiri Institute of Technology. 
+                My focus lies in building reliable backend architectures, designing efficient algorithms, 
+                and translating complex real-world requirements into clean, testable code in <strong>Java</strong> and <strong>Python</strong>.
+              </p>
+
+              <p class="bio-text">
+                With a strong command of <strong>Data Structures, Algorithms, and Operating Systems</strong>, I approach software 
+                development with an analytical mindset—seeking simple, maintainable solutions for technical problems.
+              </p>
+            </div>
+
+            <!-- Career Highlights (Clean, Minimalist Layout) -->
+            <div class="about-section-block">
+              <h4 class="block-title">
+                <i class="fa-solid fa-trophy block-icon"></i> CAREER &amp; ACADEMIC HIGHLIGHTS
+              </h4>
+
+              <div class="highlights-list">
+                
+                <div class="highlight-item">
+                  <div class="highlight-badge"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                  <div class="highlight-info">
+                    <h5>Digital Money Transition Workflow</h5>
+                    <p>Engineered a 6-month software system converting cash-handling processes into an auditable digital payment architecture using Java and Python.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-badge"><i class="fa-solid fa-car-burst"></i></div>
+                  <div class="highlight-info">
+                    <h5>IoT Driver Drowsiness Detection System</h5>
+                    <p>Designed and built an embedded vehicular safety mechanism interfacing Arduino microcontrollers with fatigue sensors for instantaneous alarm alerts.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="highlight-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <div class="highlight-info">
+                    <h5>Strong Academic Foundation</h5>
+                    <p>Consistent academic excellence across degrees: 87.4% in Secondary School, 68.17% in Pre-University Science, and 6.58 CGPA in B.E. CSE (Data Science).</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Personal Interests (Clean Chips / Grid) -->
+            <div class="about-section-block">
+              <h4 class="block-title">
+                <i class="fa-solid fa-heart block-icon"></i> PERSONAL INTERESTS &amp; PASSIONS
+              </h4>
+
+              <div class="interests-grid">
+                
+                <div class="interest-pill">
+                  <span class="interest-icon"><i class="fa-solid fa-server"></i></span>
+                  <div class="interest-text">
+                    <strong>Backend Architecture</strong>
+                    <small>APIs, OOP design &amp; concurrency</small>
+                  </div>
+                </div>
+
+                <div class="interest-pill">
+                  <span class="interest-icon"><i class="fa-solid fa-microchip"></i></span>
+                  <div class="interest-text">
+                    <strong>Embedded Systems &amp; IoT</strong>
+                    <small>Sensors &amp; Arduino prototyping</small>
+                  </div>
+                </div>
+
+                <div class="interest-pill">
+                  <span class="interest-icon"><i class="fa-solid fa-puzzle-piece"></i></span>
+                  <div class="interest-text">
+                    <strong>Algorithmic Puzzles</strong>
+                    <small>Data structures &amp; problem solving</small>
+                  </div>
+                </div>
+
+                <div class="interest-pill">
+                  <span class="interest-icon"><i class="fa-solid fa-chart-line"></i></span>
+                  <div class="interest-text">
+                    <strong>Data Science Explorations</strong>
+                    <small>Python data analysis &amp; modeling</small>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Action Link -->
+            <div class="about-action-row">
+              <a href="#projects" class="pixel-btn pixel-btn-primary">
+                <i class="fa-solid fa-laptop-code"></i> <span>EXPLORE MY WORK</span>
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                <i class="fa-solid fa-paper-plane"></i> <span>LET'S CONNECT</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END ABOUT SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- SKILLS SECTION (Pixel Art Style & Skill Tree Matrix)     -->
+    <!-- Core competencies with progress bars, icons & filters   -->
+    <!-- ======================================================= -->
+    <section class="section skills-section pixel-skills-section" id="skills">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <p class="section-eyebrow">★ CHARACTER ATTRIBUTES &amp; ABILITIES ★</p>
+          <h2 class="section-title">Core <span class="gradient-text">Competencies</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            A comprehensive breakdown of programming languages, backend systems, core CS fundamentals, and embedded hardware.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skill Categories">
+          <button type="button" class="pixel-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span>[★ ALL SKILLS]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="languages" role="tab" aria-selected="false">
+            <span>[☕ LANGUAGES]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="backend" role="tab" aria-selected="false">
+            <span>[⚙️ BACKEND]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="core-cs" role="tab" aria-selected="false">
+            <span>[🧠 CORE CS]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="hardware" role="tab" aria-selected="false">
+            <span>[⚡ HARDWARE/IOT]</span>
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="tools" role="tab" aria-selected="false">
+            <span>[🛠️ TOOLS]</span>
+          </button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="pixel-skills-grid" id="skills-grid">
+
+          <!-- ======================================================= -->
+          <!-- CATEGORY 1: PROGRAMMING LANGUAGES                       -->
+          <!-- ======================================================= -->
+
+          <!-- SKILL: Java - Primary OOP language for enterprise backend systems & digital transaction workflows -->
+          <div class="pixel-skill-card" data-category="languages">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box java-bg">
+                <i class="fa-brands fa-java text-java"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Java</h3>
+                <span class="skill-badge">PRIMARY LANG</span>
+              </div>
+              <span class="skill-rank">LVL.88</span>
+            </div>
+            
+            <p class="skill-summary">
+              Primary object-oriented language used for enterprise backend development, secure ledger transactions, and algorithmic design.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">88%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-java" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">OOP</span>
+              <span class="mini-tag">Multithreading</span>
+              <span class="mini-tag">JVM</span>
+            </div>
+          </div>
+
+          <!-- SKILL: Python - High-level language utilized for Data Science, algorithmic automation, and scripting -->
+          <div class="pixel-skill-card" data-category="languages">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box python-bg">
+                <i class="fa-brands fa-python text-python"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Python</h3>
+                <span class="skill-badge">DATA &amp; SCRIPTING</span>
+              </div>
+              <span class="skill-rank">LVL.82</span>
+            </div>
+
+            <p class="skill-summary">
+              Used for data analytics, algorithmic workflows, numerical computations, and backend prototyping across academic projects.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">82%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-python" style="width: 82%;" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Data Science</span>
+              <span class="mini-tag">Automation</span>
+              <span class="mini-tag">Scripting</span>
+            </div>
+          </div>
+
+
+          <!-- ======================================================= -->
+          <!-- CATEGORY 2: BACKEND & SYSTEM ARCHITECTURE               -->
+          <!-- ======================================================= -->
+
+          <!-- SKILL: Java Backend Development - Transaction logic, service design, and data validation -->
+          <div class="pixel-skill-card" data-category="backend">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box backend-bg">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Java Backend Workflows</h3>
+                <span class="skill-badge">ARCHITECTURE</span>
+              </div>
+              <span class="skill-rank">LVL.85</span>
+            </div>
+
+            <p class="skill-summary">
+              Engineering reliable server workflows, business logic separation, and data auditing—demonstrated in the Digital Money Transition project.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-backend" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Payment Logic</span>
+              <span class="mini-tag">Data Integrity</span>
+              <span class="mini-tag">Clean Code</span>
+            </div>
+          </div>
+
+          <!-- SKILL: Database Management & SQL - Relational data models, schemas, and queries -->
+          <div class="pixel-skill-card" data-category="backend">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box db-bg">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Database Systems &amp; SQL</h3>
+                <span class="skill-badge">PERSISTENCE</span>
+              </div>
+              <span class="skill-rank">LVL.78</span>
+            </div>
+
+            <p class="skill-summary">
+              Relational schema design, query optimization, data normalization, and state persistence for transaction processing systems.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">78%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-db" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">SQL</span>
+              <span class="mini-tag">Relational Design</span>
+              <span class="mini-tag">CRUD</span>
+            </div>
+          </div>
+
+
+          <!-- ======================================================= -->
+          <!-- CATEGORY 3: CORE COMPUTER SCIENCE FUNDAMENTALS          -->
+          <!-- ======================================================= -->
+
+          <!-- SKILL: Data Structures & Algorithms - Foundational problem solving and computational efficiency -->
+          <div class="pixel-skill-card" data-category="core-cs">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box dsa-bg">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Data Structures &amp; Algorithms</h3>
+                <span class="skill-badge">CORE FOUNDATION</span>
+              </div>
+              <span class="skill-rank">LVL.86</span>
+            </div>
+
+            <p class="skill-summary">
+              In-depth knowledge of Arrays, Linked Lists, Stacks, Queues, Trees, Hashing, Graph traversals, and algorithmic complexity (Big-O analysis).
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">86%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-dsa" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Time &amp; Space Complexity</span>
+              <span class="mini-tag">Sorting &amp; Searching</span>
+              <span class="mini-tag">Trees/Graphs</span>
+            </div>
+          </div>
+
+          <!-- SKILL: Operating Systems - Process management, memory allocation, and concurrency -->
+          <div class="pixel-skill-card" data-category="core-cs">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box os-bg">
+                <i class="fa-solid fa-window-restore"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Operating Systems</h3>
+                <span class="skill-badge">SYSTEMS LEVEL</span>
+              </div>
+              <span class="skill-rank">LVL.84</span>
+            </div>
+
+            <p class="skill-summary">
+              Strong grasp of process synchronization, CPU scheduling algorithms, virtual memory paging, deadlock handling, and file system architecture.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">84%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-os" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Concurrency</span>
+              <span class="mini-tag">Memory Management</span>
+              <span class="mini-tag">Process Scheduling</span>
+            </div>
+          </div>
+
+
+          <!-- ======================================================= -->
+          <!-- CATEGORY 4: HARDWARE, EMBEDDED SYSTEMS & IOT            -->
+          <!-- ======================================================= -->
+
+          <!-- SKILL: Arduino & Microcontrollers - Hardware programming from Driver Drowsiness project -->
+          <div class="pixel-skill-card" data-category="hardware">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box iot-bg">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Arduino &amp; Microcontrollers</h3>
+                <span class="skill-badge">EMBEDDED HARDWARE</span>
+              </div>
+              <span class="skill-rank">LVL.80</span>
+            </div>
+
+            <p class="skill-summary">
+              Hands-on firmware development, serial communication, and real-time controller programming utilized in driver fatigue prevention devices.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">80%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-iot" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Arduino Uno</span>
+              <span class="mini-tag">Embedded C</span>
+              <span class="mini-tag">Hardware I/O</span>
+            </div>
+          </div>
+
+          <!-- SKILL: Sensor Integration & Road Safety Tech - Interfacing real-world sensory inputs -->
+          <div class="pixel-skill-card" data-category="hardware">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box sensor-bg">
+                <i class="fa-solid fa-wave-square"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Sensors &amp; Safety Tech</h3>
+                <span class="skill-badge">REAL-TIME IOT</span>
+              </div>
+              <span class="skill-rank">LVL.80</span>
+            </div>
+
+            <p class="skill-summary">
+              Integrating analog and digital sensory devices, processing threshold signals, and implementing instant audible alarms for vehicular security.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">80%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-sensor" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Sensory Telemetry</span>
+              <span class="mini-tag">Alert Triggers</span>
+              <span class="mini-tag">Road Safety</span>
+            </div>
+          </div>
+
+
+          <!-- ======================================================= -->
+          <!-- CATEGORY 5: DEVELOPER TOOLS & METHODOLOGIES             -->
+          <!-- ======================================================= -->
+
+          <!-- SKILL: Git & GitHub - Version control, repo management, and team collaboration -->
+          <div class="pixel-skill-card" data-category="tools">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box git-bg">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">Git &amp; Version Control</h3>
+                <span class="skill-badge">COLLABORATION</span>
+              </div>
+              <span class="skill-rank">LVL.84</span>
+            </div>
+
+            <p class="skill-summary">
+              Branching strategies, collaborative workflows, commit hygiene, and code repository hosting via GitHub (github.com/sanjanavaradarj).
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">84%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-git" style="width: 84%;" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Git CLI</span>
+              <span class="mini-tag">Code Review</span>
+              <span class="mini-tag">Open Source</span>
+            </div>
+          </div>
+
+          <!-- SKILL: IDEs, Linux CLI & Development Environments -->
+          <div class="pixel-skill-card" data-category="tools">
+            <div class="skill-card-topbar">
+              <div class="skill-icon-box cli-bg">
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-title">CLI, Linux &amp; Tools</h3>
+                <span class="skill-badge">DEV ENVIRONMENT</span>
+              </div>
+              <span class="skill-rank">LVL.80</span>
+            </div>
+
+            <p class="skill-summary">
+              Productive in terminal navigation, VS Code, debugging toolsets, build scripts, and Arduino IDE firmware compilation.
+            </p>
+
+            <div class="pixel-progress-wrapper">
+              <div class="progress-info">
+                <span class="progress-label">PROFICIENCY</span>
+                <span class="progress-percent">80%</span>
+              </div>
+              <div class="pixel-progress-track">
+                <div class="pixel-progress-fill fill-cli" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-tags">
+              <span class="mini-tag">Linux Commands</span>
+              <span class="mini-tag">VS Code</span>
+              <span class="mini-tag">Debugging</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RPG Competency Summary HUD Banner -->
+        <div class="skills-summary-banner">
+          <div class="summary-stat-box">
+            <span class="stat-num">10+</span>
+            <span class="stat-text">TECHNICAL SKILLS</span>
+          </div>
+          <div class="summary-stat-box">
+            <span class="stat-num">02</span>
+            <span class="stat-text">CAPSTONE PROJECTS</span>
+          </div>
+          <div class="summary-stat-box">
+            <span class="stat-num">100%</span>
+            <span class="stat-text">HANDS-ON CODE</span>
+          </div>
+          <div class="summary-stat-box">
+            <span class="stat-num">2026</span>
+            <span class="stat-text">GRADUATION YEAR</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END SKILLS SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- TIMELINE SECTION — Pixel-art coherent redesign          -->
+    <!-- Includes Education milestones + Major Project highlights -->
+    <!-- Rounded cards with gradient accent borders, smooth hover -->
+    <!-- ======================================================= -->
+    <section class="section tl-section" id="timeline">
+      <div class="container">
+
+        <!-- Section header – same eyebrow + gradient-text pattern used throughout -->
+        <div class="section-header text-center">
+          <p class="section-eyebrow">★ QUEST LOG &amp; ACHIEVEMENT BOARD ★</p>
+          <h2 class="section-title">Journey &amp; <span class="gradient-text">Milestones</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            A chronological record of education, key projects, and professional growth — the complete quest history.
+          </p>
+        </div>
+
+        <!-- Tab switcher: toggle between Education and Projects views -->
+        <div class="tl-tab-bar" role="tablist" aria-label="Timeline Categories">
+          <button class="tl-tab active" data-tl-tab="education" role="tab" aria-selected="true" id="tab-education">
+            <i class="fa-solid fa-graduation-cap"></i> Education
+          </button>
+          <button class="tl-tab" data-tl-tab="projects" role="tab" aria-selected="false" id="tab-projects">
+            <i class="fa-solid fa-laptop-code"></i> Projects
+          </button>
+        </div>
+
+        <!-- ─── EDUCATION TIMELINE ─── -->
+        <div class="tl-track" id="tl-education" role="tabpanel" aria-labelledby="tab-education">
+
+          <!-- Central vertical spine -->
+          <div class="tl-spine" aria-hidden="true"></div>
+
+          <!-- ── Event 1: Current – Job Seeking ── -->
+          <!-- "timeline-current" highlights this node as the present active state -->
+          <div class="tl-event tl-left">
+            <div class="tl-node tl-node--active" aria-hidden="true">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="tl-card tl-card--active">
+              <!-- Accent strip color indicates type: green = active/present -->
+              <div class="tl-card-accent accent-green"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-green">● NOW</span>
+                <h3 class="tl-event-title">Seeking Software Engineering Roles</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-location-dot"></i> Karnataka, India &amp; Remote</p>
+                <p class="tl-event-desc">
+                  Actively seeking internship and entry-level backend engineering opportunities. Ready to apply
+                  Java &amp; Python skills to production systems and collaborative engineering teams.
+                </p>
+                <div class="tl-tags">
+                  <span class="tl-tag">Open to Hire</span>
+                  <span class="tl-tag">Java Backend</span>
+                  <span class="tl-tag">Python</span>
+                  <span class="tl-tag">Data Science</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Event 2: B.E. Degree ── -->
+          <!-- Indigo accent = primary degree / highest qualification -->
+          <div class="tl-event tl-right">
+            <div class="tl-node tl-node--edu" aria-hidden="true">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-indigo"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-indigo">2022 — 2026</span>
+                <h3 class="tl-event-title">B.E. in CSE (Data Science)</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-building-columns"></i> Adhichunchanagiri Institute of Technology, Chikkamagaluru</p>
+                <p class="tl-event-desc">
+                  Comprehensive coursework across Data Science, Software Engineering, Operating Systems, DBMS,
+                  and DSA. Completed two capstone projects: a Java-based digital payment ledger and an Arduino
+                  driver-fatigue embedded safety system.
+                </p>
+                <!-- Score badge with trophy icon for visual recognition -->
+                <div class="tl-score-row">
+                  <span class="tl-score"><i class="fa-solid fa-trophy"></i> CGPA: 6.58</span>
+                </div>
+                <div class="tl-tags">
+                  <span class="tl-tag">Data Science</span>
+                  <span class="tl-tag">OS &amp; DBMS</span>
+                  <span class="tl-tag">Java</span>
+                  <span class="tl-tag">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Event 3: Pre-University ── -->
+          <!-- Cyan accent = intermediate milestone -->
+          <div class="tl-event tl-left">
+            <div class="tl-node tl-node--school" aria-hidden="true">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-cyan"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-cyan">2020 — 2022</span>
+                <h3 class="tl-event-title">Pre-University Course (PUC)</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-building-columns"></i> Nagarjuna PU College, Chikkaballapur, Karnataka</p>
+                <p class="tl-event-desc">
+                  Science stream with Physics, Chemistry, Mathematics and Computer Science. Built strong analytical
+                  foundation that underpins all subsequent engineering study.
+                </p>
+                <div class="tl-score-row">
+                  <span class="tl-score"><i class="fa-solid fa-award"></i> Score: 68.17%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Event 4: Secondary School ── -->
+          <!-- Amber accent = foundational milestone -->
+          <div class="tl-event tl-right">
+            <div class="tl-node tl-node--base" aria-hidden="true">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-amber"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-amber">Completed 2020</span>
+                <h3 class="tl-event-title">Secondary School (10th Standard)</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-school"></i> Oxford English School, Bangalore Rural, Devanahalli</p>
+                <p class="tl-event-desc">
+                  Graduated with distinction. Developed academic discipline and an early passion for science,
+                  technology, and logical problem solving.
+                </p>
+                <div class="tl-score-row">
+                  <span class="tl-score"><i class="fa-solid fa-star"></i> Score: 87.4%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tl-education -->
+
+
+        <!-- ─── PROJECTS TIMELINE ─── -->
+        <div class="tl-track tl-track--hidden" id="tl-projects" role="tabpanel" aria-labelledby="tab-projects">
+
+          <div class="tl-spine" aria-hidden="true"></div>
+
+          <!-- ── Project 1: Digital Money Transition System ── -->
+          <!-- Purple accent = backend / software project -->
+          <div class="tl-event tl-left">
+            <div class="tl-node tl-node--project" aria-hidden="true">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-purple"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-purple">6-Month Capstone · 2024</span>
+                <h3 class="tl-event-title">Digital Money Transition System</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-code"></i> Academic Project · Java Backend</p>
+                <p class="tl-event-desc">
+                  Engineered a secure digital ledger application supporting deposits, withdrawals, fund transfers,
+                  and multi-user account management. Implemented OOP architecture with transaction validation,
+                  audit logs, and data persistence via SQL schema design.
+                </p>
+                <div class="tl-tags">
+                  <span class="tl-tag">Java</span>
+                  <span class="tl-tag">OOP</span>
+                  <span class="tl-tag">SQL</span>
+                  <span class="tl-tag">Backend Logic</span>
+                  <span class="tl-tag">Data Integrity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Project 2: Driver Drowsiness Alert System ── -->
+          <!-- Amber accent = embedded / IoT / hardware project -->
+          <div class="tl-event tl-right">
+            <div class="tl-node tl-node--iot" aria-hidden="true">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-amber"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-amber">Hardware Project · 2023</span>
+                <h3 class="tl-event-title">Driver Drowsiness Alert System</h3>
+                <p class="tl-event-org"><i class="fa-solid fa-microchip"></i> Arduino · Embedded C · Sensors</p>
+                <p class="tl-event-desc">
+                  Built a real-time vehicular fatigue detection system using Arduino Uno with sensor arrays.
+                  The device monitors driver alertness, processes threshold signals, and triggers an instant
+                  audible alarm — addressing a critical road-safety problem with practical embedded hardware.
+                </p>
+                <div class="tl-tags">
+                  <span class="tl-tag">Arduino</span>
+                  <span class="tl-tag">Embedded C</span>
+                  <span class="tl-tag">Sensors</span>
+                  <span class="tl-tag">Real-Time I/O</span>
+                  <span class="tl-tag">Road Safety</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Milestone: Version-Control & GitHub Journey ── -->
+          <!-- Orange accent = tooling / dev workflow milestone -->
+          <div class="tl-event tl-left">
+            <div class="tl-node tl-node--tools" aria-hidden="true">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="tl-card">
+              <div class="tl-card-accent accent-orange"></div>
+              <div class="tl-card-body">
+                <span class="tl-chip chip-orange">Ongoing · 2022–Present</span>
+                <h3 class="tl-event-title">Open Source &amp; Git Portfolio</h3>
+                <p class="tl-event-org"><i class="fa-brands fa-github"></i> github.com/sanjanavaradarj</p>
+                <p class="tl-event-desc">
+                  Maintained collaborative repositories, practiced branching strategies, commit hygiene, and
+                  code reviews. Established a personal GitHub profile showcasing academic and personal projects
+                  for recruiters and peers.
+                </p>
+                <div class="tl-tags">
+                  <span class="tl-tag">Git</span>
+                  <span class="tl-tag">GitHub</span>
+                  <span class="tl-tag">Version Control</span>
+                  <span class="tl-tag">Open Source</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tl-projects -->
+
+
+        <!-- Bottom summary strip: quick-glance achievement counters -->
+        <div class="tl-summary-strip">
+          <div class="tl-stat">
+            <span class="tl-stat-num">4</span>
+            <span class="tl-stat-label">Academic Years</span>
+          </div>
+          <div class="tl-stat">
+            <span class="tl-stat-num">2</span>
+            <span class="tl-stat-label">Capstone Projects</span>
+          </div>
+          <div class="tl-stat">
+            <span class="tl-stat-num">87.4%</span>
+            <span class="tl-stat-label">Top SSLC Score</span>
+          </div>
+          <div class="tl-stat">
+            <span class="tl-stat-num">2026</span>
+            <span class="tl-stat-label">Graduation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- END TIMELINE SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- PROJECTS SECTION — Thumbnail-first card grid            -->
+    <!-- Each thumbnail card is wired to a full-detail modal     -->
+    <!-- via data-project="<id>" attributes on both the          -->
+    <!-- thumbnail and the corresponding modal panel.            -->
+    <!-- Clicking the thumbnail or "View Details" opens the      -->
+    <!-- matching .proj-modal[data-modal="<id>"] overlay.        -->
+    <!-- ======================================================= -->
+    <section class="section proj-section" id="projects">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Portfolio Work</p>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Hands-on technical implementations demonstrating software engineering and embedded systems capabilities.
+          </p>
+        </div>
+
+        <!-- ── Project Thumbnail Grid ── -->
+        <!--
+          Each .proj-card article contains:
+            1. A .proj-thumb — the clickable thumbnail image area
+            2. .proj-thumb-overlay — hover glass overlay with CTA button
+            3. .proj-info — meta: category chip, title, short description, tech tags
+            4. .proj-actions — GitHub link + "View Details" modal trigger
+          
+          The `data-project="<id>"` attribute on .proj-card links it to
+          the corresponding modal: .proj-modal[data-modal="<id>"]
+        -->
+        <div class="proj-grid">
+
+          <!-- ═══════════════════════════════════════════════════
+               PROJECT 1: Digital Money Transition System
+               Thumbnail → project_money.jpg (generated 16:9 illustration)
+               Clicking thumbnail or "View Details" opens modal data-modal="money"
+               ═══════════════════════════════════════════════════ -->
+          <article class="proj-card" data-project="money" id="proj-card-money">
+
+            <!-- THUMBNAIL: clicking this image fires openModal('money') -->
+            <div class="proj-thumb"
+                 role="button"
+                 tabindex="0"
+                 aria-label="View details for Digital Money Transition System"
+                 onclick="openProjModal('money')"
+                 onkeydown="if(event.key==='Enter')openProjModal('money')">
+
+              <!-- project_money.jpg — AI-generated banking/ledger illustration -->
+              <img src="project_money.jpg"
+                   alt="Digital Money Transition System — Java backend banking ledger project"
+                   class="proj-thumb-img"
+                   loading="lazy">
+
+              <!-- Hover overlay: dims thumbnail and shows View Details CTA -->
+              <div class="proj-thumb-overlay" aria-hidden="true">
+                <div class="proj-overlay-content">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span>View Details</span>
+                </div>
+              </div>
+
+              <!-- Category badge pinned to thumbnail top-left -->
+              <span class="proj-category-badge badge-software">Software</span>
+
+              <!-- Duration badge pinned top-right -->
+              <span class="proj-duration-badge">
+                <i class="fa-solid fa-clock"></i> 6 Months
+              </span>
+            </div>
+
+            <!-- Card info block below the thumbnail -->
+            <div class="proj-info">
+              <!-- Tech icons row: icons signal the stack at a glance -->
+              <div class="proj-tech-icons">
+                <i class="fa-brands fa-java text-java" title="Java"></i>
+                <i class="fa-solid fa-database" title="SQL / Database" style="color:#10b981"></i>
+                <i class="fa-solid fa-code-branch" title="OOP Architecture" style="color:#8b5cf6"></i>
+              </div>
+
+              <h3 class="proj-title">Digital Money Transition System</h3>
+
+              <p class="proj-excerpt">
+                A secure Java backend ledger supporting deposits, withdrawals, transfers, and
+                multi-user account management with full audit logging and SQL persistence.
+              </p>
+
+              <!-- Tag pills — each represents a key technology or domain -->
+              <div class="proj-tags">
+                <span class="proj-tag">Java</span>
+                <span class="proj-tag">OOP</span>
+                <span class="proj-tag">SQL</span>
+                <span class="proj-tag">Backend</span>
+                <span class="proj-tag">Transaction Security</span>
+              </div>
+            </div>
+
+            <!-- Action row: external GitHub link + modal detail trigger -->
+            <div class="proj-actions">
+              <!-- GitHub link opens the real repository in a new tab -->
+              <a href="https://github.com/sanjanavaradarj"
+                 class="proj-btn proj-btn-outline"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="View source code on GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+
+              <!-- "View Details" button — opens modal data-modal="money" -->
+              <button class="proj-btn proj-btn-primary"
+                      onclick="openProjModal('money')"
+                      aria-label="Open full details for Digital Money Transition System">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Details
+              </button>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════════════════════════════════════════
+               PROJECT 2: Driver Drowsiness Alert System
+               Thumbnail → project_drowsiness.jpg (generated Arduino/IoT illustration)
+               Clicking thumbnail or "View Details" opens modal data-modal="drowsiness"
+               ═══════════════════════════════════════════════════ -->
+          <article class="proj-card" data-project="drowsiness" id="proj-card-drowsiness">
+
+            <!-- THUMBNAIL: clicking this image fires openModal('drowsiness') -->
+            <div class="proj-thumb"
+                 role="button"
+                 tabindex="0"
+                 aria-label="View details for Driver Drowsiness Alert System"
+                 onclick="openProjModal('drowsiness')"
+                 onkeydown="if(event.key==='Enter')openProjModal('drowsiness')">
+
+              <!-- project_drowsiness.jpg — AI-generated Arduino/sensor illustration -->
+              <img src="project_drowsiness.jpg"
+                   alt="Driver Drowsiness Alert System — Arduino embedded IoT safety project"
+                   class="proj-thumb-img"
+                   loading="lazy">
+
+              <!-- Hover overlay -->
+              <div class="proj-thumb-overlay" aria-hidden="true">
+                <div class="proj-overlay-content">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  <span>View Details</span>
+                </div>
+              </div>
+
+              <!-- Category badge: Hardware/IoT -->
+              <span class="proj-category-badge badge-hardware">Hardware / IoT</span>
+
+              <!-- Duration badge -->
+              <span class="proj-duration-badge">
+                <i class="fa-solid fa-clock"></i> 6 Months
+              </span>
+            </div>
+
+            <div class="proj-info">
+              <div class="proj-tech-icons">
+                <i class="fa-solid fa-microchip" title="Arduino Microcontroller" style="color:#06b6d4"></i>
+                <i class="fa-solid fa-wave-square" title="Sensors & Signal Processing" style="color:#f59e0b"></i>
+                <i class="fa-solid fa-car" title="Road Safety Application" style="color:#ef4444"></i>
+              </div>
+
+              <h3 class="proj-title">Driver Drowsiness Alert System</h3>
+
+              <p class="proj-excerpt">
+                Real-time Arduino-based embedded system that monitors driver fatigue via sensor
+                arrays and triggers an instant audible alarm when drowsiness thresholds are exceeded.
+              </p>
+
+              <div class="proj-tags">
+                <span class="proj-tag">Arduino</span>
+                <span class="proj-tag">Embedded C</span>
+                <span class="proj-tag">Sensors</span>
+                <span class="proj-tag">IoT</span>
+                <span class="proj-tag">Road Safety</span>
+              </div>
+            </div>
+
+            <div class="proj-actions">
+              <a href="https://github.com/sanjanavaradarj"
+                 class="proj-btn proj-btn-outline"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="View source code on GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+
+              <!-- "View Details" button — opens modal data-modal="drowsiness" -->
+              <button class="proj-btn proj-btn-primary"
+                      onclick="openProjModal('drowsiness')"
+                      aria-label="Open full details for Driver Drowsiness Alert System">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> View Details
+              </button>
+            </div>
+          </article>
+
+        </div><!-- /proj-grid -->
+
+      </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PROJECT DETAIL MODALS
+         Each .proj-modal[data-modal="<id>"] is paired to a
+         .proj-card[data-project="<id>"] above.
+         openProjModal('<id>') adds .is-open to the matching modal.
+         closeProjModal() removes .is-open from all modals.
+         ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Modal 1: Digital Money Transition System
+         data-modal="money" ←→ proj-card data-project="money" -->
+    <div class="proj-modal" data-modal="money" id="modal-money"
+         role="dialog" aria-modal="true" aria-labelledby="modal-money-title">
+
+      <div class="proj-modal-backdrop" onclick="closeProjModal()" aria-hidden="true"></div>
+
+      <div class="proj-modal-panel">
+
+        <!-- Modal close button -->
+        <button class="proj-modal-close" onclick="closeProjModal()" aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Modal thumbnail — same image used in the card above -->
+        <div class="proj-modal-thumb">
+          <img src="project_money.jpg"
+               alt="Digital Money Transition System project preview"
+               class="proj-modal-img">
+          <div class="proj-modal-thumb-gradient" aria-hidden="true"></div>
+          <span class="proj-modal-category badge-software">Software Project</span>
+        </div>
+
+        <div class="proj-modal-body">
+
+          <!-- Header row -->
+          <div class="proj-modal-header">
+            <div>
+              <span class="proj-modal-eyebrow">
+                <i class="fa-solid fa-clock"></i> 6-Month Capstone · 2024
+              </span>
+              <h2 class="proj-modal-title" id="modal-money-title">Digital Money Transition System</h2>
+              <p class="proj-modal-subtitle">
+                <i class="fa-brands fa-java"></i> Java Backend · OOP Architecture · SQL Database
+              </p>
+            </div>
+            <div class="proj-modal-tech-icons">
+              <i class="fa-brands fa-java text-java" title="Java"></i>
+              <i class="fa-solid fa-database" title="SQL" style="color:#10b981"></i>
+              <i class="fa-solid fa-code-branch" title="OOP" style="color:#8b5cf6"></i>
+            </div>
+          </div>
+
+          <!-- Overview -->
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-align-left"></i> Project Overview
+            </h4>
+            <p>
+              This capstone project addresses the real-world challenge of converting physical cash-based
+              transaction workflows into a secure, auditable digital payment system. Built entirely in Java
+              using core OOP principles, it models an end-to-end banking ledger complete with user accounts,
+              transaction histories, and data integrity enforcement.
+            </p>
+          </div>
+
+          <!-- Key Features -->
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-list-check"></i> Key Features &amp; Highlights
+            </h4>
+            <ul class="proj-modal-list">
+              <li><i class="fa-solid fa-check"></i> Multi-user account system with deposit, withdrawal, and fund transfer operations</li>
+              <li><i class="fa-solid fa-check"></i> Transaction validation layer ensuring data integrity and preventing invalid states</li>
+              <li><i class="fa-solid fa-check"></i> Full audit log: every transaction is recorded with timestamps and user references</li>
+              <li><i class="fa-solid fa-check"></i> Relational SQL schema with normalized tables for users, accounts, and transactions</li>
+              <li><i class="fa-solid fa-check"></i> Clean separation of concerns — business logic, data access, and model layers</li>
+              <li><i class="fa-solid fa-check"></i> Exception handling for concurrent access edge cases and invalid inputs</li>
+            </ul>
+          </div>
+
+          <!-- Tech Stack -->
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-layer-group"></i> Technologies Used
+            </h4>
+            <div class="proj-modal-tags">
+              <span class="proj-modal-tag">Java</span>
+              <span class="proj-modal-tag">OOP Design Patterns</span>
+              <span class="proj-modal-tag">SQL / RDBMS</span>
+              <span class="proj-modal-tag">Data Integrity</span>
+              <span class="proj-modal-tag">Exception Handling</span>
+              <span class="proj-modal-tag">Audit Logging</span>
+              <span class="proj-modal-tag">Multi-user Sessions</span>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="proj-modal-actions">
+            <a href="https://github.com/sanjanavaradarj"
+               class="proj-btn proj-btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+            <button class="proj-btn proj-btn-outline" onclick="closeProjModal()">
+              <i class="fa-solid fa-xmark"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /modal-money -->
+
+
+    <!-- Modal 2: Driver Drowsiness Alert System
+         data-modal="drowsiness" ←→ proj-card data-project="drowsiness" -->
+    <div class="proj-modal" data-modal="drowsiness" id="modal-drowsiness"
+         role="dialog" aria-modal="true" aria-labelledby="modal-drowsiness-title">
+
+      <div class="proj-modal-backdrop" onclick="closeProjModal()" aria-hidden="true"></div>
+
+      <div class="proj-modal-panel">
+
+        <button class="proj-modal-close" onclick="closeProjModal()" aria-label="Close project details">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="proj-modal-thumb">
+          <img src="project_drowsiness.jpg"
+               alt="Driver Drowsiness Alert System project preview"
+               class="proj-modal-img">
+          <div class="proj-modal-thumb-gradient" aria-hidden="true"></div>
+          <span class="proj-modal-category badge-hardware">Hardware / IoT</span>
+        </div>
+
+        <div class="proj-modal-body">
+
+          <div class="proj-modal-header">
+            <div>
+              <span class="proj-modal-eyebrow">
+                <i class="fa-solid fa-clock"></i> 6-Month Capstone · 2023
+              </span>
+              <h2 class="proj-modal-title" id="modal-drowsiness-title">Driver Drowsiness Alert System</h2>
+              <p class="proj-modal-subtitle">
+                <i class="fa-solid fa-microchip"></i> Arduino Uno · Embedded C · Sensor Integration
+              </p>
+            </div>
+            <div class="proj-modal-tech-icons">
+              <i class="fa-solid fa-microchip" title="Arduino" style="color:#06b6d4"></i>
+              <i class="fa-solid fa-wave-square" title="Sensors" style="color:#f59e0b"></i>
+              <i class="fa-solid fa-car" title="Road Safety" style="color:#ef4444"></i>
+            </div>
+          </div>
+
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-align-left"></i> Project Overview
+            </h4>
+            <p>
+              This embedded systems project tackles one of the leading causes of road accidents — driver fatigue.
+              An Arduino Uno microcontroller is interfaced with analog and digital sensors to continuously monitor
+              driver alertness. When sensor readings cross predefined drowsiness thresholds, the system
+              immediately activates an audible alarm to wake the driver and prevent accidents.
+            </p>
+          </div>
+
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-list-check"></i> Key Features &amp; Highlights
+            </h4>
+            <ul class="proj-modal-list">
+              <li><i class="fa-solid fa-check"></i> Arduino Uno microcontroller programmed in Embedded C for real-time processing</li>
+              <li><i class="fa-solid fa-check"></i> Multi-sensor input processing: eye blink / head tilt detection via analog sensors</li>
+              <li><i class="fa-solid fa-check"></i> Threshold-based alerting: configurable sensitivity for different driver profiles</li>
+              <li><i class="fa-solid fa-check"></i> Sub-second response latency — from sensor trigger to alarm activation</li>
+              <li><i class="fa-solid fa-check"></i> Low power design suitable for continuous in-vehicle operation</li>
+              <li><i class="fa-solid fa-check"></i> Potential integration path with vehicle power systems and buzzer hardware</li>
+            </ul>
+          </div>
+
+          <div class="proj-modal-section">
+            <h4 class="proj-modal-section-title">
+              <i class="fa-solid fa-layer-group"></i> Technologies Used
+            </h4>
+            <div class="proj-modal-tags">
+              <span class="proj-modal-tag">Arduino Uno</span>
+              <span class="proj-modal-tag">Embedded C</span>
+              <span class="proj-modal-tag">Analog Sensors</span>
+              <span class="proj-modal-tag">Digital I/O</span>
+              <span class="proj-modal-tag">Real-Time Systems</span>
+              <span class="proj-modal-tag">Threshold Algorithms</span>
+              <span class="proj-modal-tag">Road Safety</span>
+            </div>
+          </div>
+
+          <div class="proj-modal-actions">
+            <a href="https://github.com/sanjanavaradarj"
+               class="proj-btn proj-btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+            <button class="proj-btn proj-btn-outline" onclick="closeProjModal()">
+              <i class="fa-solid fa-xmark"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /modal-drowsiness -->
+
+
+
+    <!-- ======================================================= -->
+    <!-- ACHIEVEMENTS SECTION                                    -->
+    <!-- Academic recognitions and key accomplishments            -->
+    <!-- ======================================================= -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Milestones &amp; Highlights</p>
+          <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Academic Engineering Innovations</h3>
+              <p>
+                Successfully developed and deployed dual capstone academic projects involving <strong>digital payments architecture</strong> 
+                and real-time <strong>driver safety IoT technology</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Continuous Technical Advancement</h3>
+              <p>
+                Actively strengthening software engineering expertise with deep dives into <strong>Java backend development</strong>, 
+                <strong>Python data pipelines</strong>, and algorithmic problem-solving.
+              </p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Real-World Problem Solving</h3>
+              <p>
+                Demonstrated strong ability to bridge hardware and software domains, solving challenges that require both computational 
+                logic and physical sensor integration.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END ACHIEVEMENTS SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- TESTIMONIALS SECTION                                    -->
+    <!-- Peer recommendations, mentor feedback & academic reviews -->
+    <!-- ======================================================= -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Recommendations &amp; Feedback</p>
+          <h2 class="section-title">Peer &amp; Mentor <span class="gradient-text">Testimonials</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Feedback and commendations on my problem solving, technical reliability, and collaborative engineering.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-pixel-header">
+              <div class="testimonial-avatar-tag">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <div class="testimonial-meta">
+                <h4 class="testimonial-name">Academic Project Guide</h4>
+                <p class="testimonial-role">Dept. of Computer Science &amp; Engineering</p>
+              </div>
+              <div class="pixel-stars" aria-label="5 stars rating">★★★★★</div>
+            </div>
+            <p class="testimonial-quote">
+              "Sanjana demonstrated exceptional consistency and attention to algorithmic detail throughout her coursework. 
+              Her work on translating traditional financial transactions into secure digital payment flows was architected with high code discipline."
+            </p>
+            <div class="testimonial-tag">PROJECT: DIGITAL MONEY TRANSITION</div>
+          </div>
+
+          <div class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-pixel-header">
+              <div class="testimonial-avatar-tag">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="testimonial-meta">
+                <h4 class="testimonial-name">IoT Lab Faculty</h4>
+                <p class="testimonial-role">Embedded Systems Department</p>
+              </div>
+              <div class="pixel-stars" aria-label="5 stars rating">★★★★★</div>
+            </div>
+            <p class="testimonial-quote">
+              "During the Driver Drowsiness Detection project, Sanjana exhibited strong hardware-software integration capabilities. 
+              She successfully interfaced sensory peripherals with Arduino controllers and implemented rapid response alert logic for road safety."
+            </p>
+            <div class="testimonial-tag">PROJECT: DRIVER DROWSINESS DETECTION</div>
+          </div>
+
+          <div class="testimonial-card pixel-testimonial-card">
+            <div class="testimonial-pixel-header">
+              <div class="testimonial-avatar-tag">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="testimonial-meta">
+                <h4 class="testimonial-name">Engineering Peer Collaborator</h4>
+                <p class="testimonial-role">B.E. CSE (Data Science) Cohort</p>
+              </div>
+              <div class="pixel-stars" aria-label="5 stars rating">★★★★★</div>
+            </div>
+            <p class="testimonial-quote">
+              "Working alongside Sanjana is always productive. She brings strong algorithmic reasoning in Java and Python, writes modular clean code, 
+              and is always eager to tackle complex backend challenges and data models."
+            </p>
+            <div class="testimonial-tag">FOCUS: JAVA &amp; BACKEND ARCHITECTURE</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- CHAT SECTION                                            -->
+    <!-- Interactive pixel terminal communicator with Sanjana     -->
+    <!-- ======================================================= -->
+    <section class="section chat-section pixel-chat-section" id="chat">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Instant Terminal Communicator</p>
+          <h2 class="section-title">Interactive <span class="gradient-text">Chat</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Ask questions about my tech stack, experience, and availability, or send a quick message in real-time.
+          </p>
+        </div>
+
+        <div class="pixel-chat-terminal">
+          
+          <div class="pixel-chat-topbar">
+            <div class="terminal-dots">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+            </div>
+            <span class="terminal-title">SANJANA_BOT_COMMUNICATOR.EXE [ONLINE]</span>
+            <span class="terminal-ping">PING: 24ms</span>
+          </div>
+
+          <!-- Message History Window -->
+          <div class="pixel-chat-window" id="chat-messages-window">
+            
+            <div class="chat-msg bot-msg">
+              <div class="chat-msg-avatar"><i class="fa-solid fa-robot"></i></div>
+              <div class="chat-bubble">
+                <span class="chat-sender">Sanjana.bot:</span>
+                <p>Hello, Adventurer! 👋 Welcome to my portfolio terminal. How can I help you today? Click a prompt below or type your question!</p>
+                <span class="chat-time">Just now</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Quick Prompt Chips -->
+          <div class="chat-quick-prompts">
+            <span class="prompt-label">PROMPTS:</span>
+            <button type="button" class="pixel-prompt-chip" data-prompt="What is your primary tech stack?">
+              ⚡ Primary Tech Stack?
+            </button>
+            <button type="button" class="pixel-prompt-chip" data-prompt="Are you available for internships or jobs?">
+              💼 Work Availability?
+            </button>
+            <button type="button" class="pixel-prompt-chip" data-prompt="Tell me about your featured projects">
+              🚀 Featured Projects?
+            </button>
+            <button type="button" class="pixel-prompt-chip" data-prompt="How can I contact you directly?">
+              📞 Contact Details?
+            </button>
+          </div>
+
+          <!-- Interactive Input Form -->
+          <form class="pixel-chat-form" id="pixel-chat-form">
+            <div class="chat-input-wrapper">
+              <span class="cli-prompt">&gt;</span>
+              <input type="text" id="chat-input-field" class="pixel-cli-input" placeholder="Type a message or command (e.g. skills, resume, hire)..." autocomplete="off" required>
+            </div>
+            <button type="submit" class="pixel-btn pixel-btn-primary chat-send-btn" id="chat-send-btn">
+              <span>SEND</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END CHAT SECTION -->
+
+
+    <!-- ======================================================= -->
+    <!-- CONTACT SECTION                                         -->
+    <!-- Communication channels, direct links & interactive form  -->
+    <!-- ======================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header text-center">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Whether you have an opportunity, a question, or would like to collaborate, I would love to hear from you!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Column -->
+          <div class="contact-info-column">
+            <h3 class="contact-box-title">Let's Connect</h3>
+            <p class="contact-box-description">
+              Feel free to reach out via email, phone, or connect on LinkedIn and GitHub. I respond promptly to inquiries!
+            </p>
+
+            <div class="contact-details-list">
+              
+              <a href="mailto:sanjanavaradarj@gmail.com" class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">Email</span>
+                  <span class="detail-value">sanjanavaradarj@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919901611394" class="contact-detail-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">Phone</span>
+                  <span class="detail-value">+91 9901611394</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/sanjana-v" class="contact-detail-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">LinkedIn</span>
+                  <span class="detail-value">linkedin.com/in/sanjana-v</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/sanjanavaradarj" class="contact-detail-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">GitHub</span>
+                  <span class="detail-value">github.com/sanjanavaradarj</span>
+                </div>
+              </a>
+
+              <div class="contact-detail-item no-hover">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Karnataka, India</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-column">
+            <form class="contact-form" id="contact-form" action="#" method="POST">
+              <h3 class="contact-box-title">Send a Message</h3>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user form-input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope form-input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-bookmark form-input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Job Opportunity / Project Collaboration" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots form-input-icon"></i>
+                  <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Hello Sanjana, I would like to discuss..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="contact-submit-btn">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+  </main>
+  <!-- END MAIN CONTENT AREA -->
+
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- Semantic footer with copyright, links & back-to-top button -->
+  <!-- ========================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo footer-logo">
+            <span class="logo-code">&lt;</span>Sanjana<span class="logo-accent">.dev</span><span class="logo-code">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Building reliable software systems with Java, Python, and Data Science fundamentals.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-socials">
+          <h4>Connect</h4>
+          <div class="social-links-row">
+            <a href="https://github.com/sanjanavaradarj" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/sanjana-v" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:sanjanavaradarj@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919901611394" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Sanjana</strong>. All rights reserved. Built with semantic HTML &amp; modern CSS.
+        </p>
+
+        <a href="#header" class="back-to-top" id="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- JavaScript for Night Mode Toggle & Interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
